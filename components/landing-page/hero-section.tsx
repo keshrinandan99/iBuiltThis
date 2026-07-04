@@ -11,7 +11,8 @@ const statsData=[
     },
     {icon:Users,
         value:'10k+',
-        label:'Active Creator'
+        label:'Active Creator',
+        hasBorder:true
     },
     {
         icon:EyeIcon,
@@ -53,9 +54,12 @@ function HeroSection() {
     Explore Projects 
     <ArrowRightIcon className='size-5'/>
         </Button>  
-
-    {statsData.map((m)=>(<StatsCard key={m.label} {...m}/>))}
+   
     
+    </div>
+     <div className='grid w-full max-w-3xl grid-cols-1 gap-6 sm:grid-cols-3 sm:gap-8'>
+    {statsData.map((m)=>(<StatsCard key={m.label} {...m}/>))}
+
     </div>
     </div>
     </div>

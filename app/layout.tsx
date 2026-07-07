@@ -9,7 +9,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html>
+    <html lang='en'>
       <body className={`${outfit.className} antialiased`}>
         <header>IBuiltThis</header>
         {children}
